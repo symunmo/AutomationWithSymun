@@ -3,6 +3,7 @@ package controller;
 public interface Constants {
 	public final String projectPath= System.getProperty("user.dir");
 	public final String driverFolderPath= "/src/main/resources/drivers";
+	public final String setupFilePath= "/src/main/resources/setup.properties";
 	public final String platform_chrome= "chrome";
 	public final String platform_fireFox= "firefox";
 	public final String platform_ie= "iE";

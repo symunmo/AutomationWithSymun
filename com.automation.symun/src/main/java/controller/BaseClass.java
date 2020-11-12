@@ -13,16 +13,14 @@ public class BaseClass extends WebDriverManager{
 	public void beforeSuite(){
 		utility = new Utility();
 	}
-	@Parameters({"Browser","HeadLess"})
+	@Parameters({"Browser"})
 	@BeforeTest
-	public void BeforeTest(@Optional (Constants.platform_chrome) String Browser,
-			@Optional (Constants.headLess) String HeadLess) {
+	public void BeforeTest(@Optional (Constants.platform_chrome) String Browser) {
 		Utility utility = new Utility();
 		utility.loadPropertyFile(
-				Constants.projectPath+"/src/main/java/controller/test.properties");
-		System.out.println(utility.getProperty("name"));
+				Constants.projectPath+ Constants.setupFilePath);
 		setWebDriver(Browser);
-		openBrowser(HeadLess);
+		openBrowser(utility.getProperty("Browser"));
 	}
 	
 	@AfterTest
