@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="EnvironmTest(failed)">
+    <classes>
+      <class name="seleniumFramework.InviromentTest">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+          <include name="goToGoogle"/>
+        </methods>
+      </class> <!-- seleniumFramework.InviromentTest -->
+    </classes>
+  </test> <!-- EnvironmTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
