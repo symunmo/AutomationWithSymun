@@ -27,11 +27,4 @@ public class Utility {
 	public String getProperty(String key) {
 		return prop.getProperty(key);
 	}
-
-	public static void main(String[] args) {
-		Utility utility = new Utility();
-		utility.loadPropertyFile(
-				Constants.projectPath+"/src/main/java/controller/test.properties");
-		System.out.println(utility.getProperty("name"));
-	}
 }
