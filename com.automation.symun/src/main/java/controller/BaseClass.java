@@ -32,7 +32,7 @@ public class BaseClass extends WebDriverManager{
 		if(name.equalsIgnoreCase("setup"))
 		
 		utility.loadPropertyFile(
-				Constants.projectPath+"/src/main/java/controller/test.properties");
+				Constants.projectPath+Constants.setupFilePath);
 		System.out.println(utility.getProperty("name"));
 	}
 }
